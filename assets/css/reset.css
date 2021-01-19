@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,600&display=swap');
+
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+.no-gutter {
+    margin-right: 0!important;
+    margin-left: 0 !important;
+}
+
+.no-pad {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+section {
+    overflow: hidden;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+} 
+
+
+h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+}
+
+h2 {
+    font-size: 32px;
+}
+
+h4 {
+    font-size: 24px;
+}
+
+h5 {
+
+    font-size: 18px;
+}
+
+h6 {
+    font-size: 16px;
+}
+
+
+
+p {
+    margin-bottom: 0;
+    font-size: 16px;
+    line-height: 1.9;
+    font-weight: 300;
+    color: #717171;
+}
+
+
+a {
+    text-decoration: none;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+a:hover, a:focus {
+    text-decoration: none;
+}
+
+button:active,button:focus {
+    outline: none;
+}
+
+label {
+    margin-bottom: 0;
+}
+
+.sec-head {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.sec-head h5 {
+    text-transform: uppercase;
+}
+
+li.nav-item.active a {
+    color: #be5441;
+}
+
+button.navbar-toggler i {
+    color: #be5441;
+    font-size: 16px;
+    border: 2px dotted #be5441;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ header.headersmall .navbar-brand img {
+    height: 70px;
+}
+
+
+@media screen and (max-width: 1400px) {  
+
+    h2 {
+        font-size: 28px;
+    }
+
+    .navbar-brand img {
+        height: 70px !important;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+
+}

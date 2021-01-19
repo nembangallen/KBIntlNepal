@@ -1,0 +1,119 @@
+<%- include('header'); -%>
+<section class="banner">
+    <div class="inner-banner" style="background: url(/assets/images/contact-banner.jpg);" >
+        <div class="container">
+            <div class="breadcrumbs">
+                <h5>K.B International</h5>
+                <h4>Application Form</h4>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="ap-form">
+    <div class="container">
+        
+
+        <div class="app-form">
+            <h4 class="ap-head">Application Form </h4>
+            <form action="/application-form" method="POST" enctype="multipart/form-data">
+            <div class="row">
+               
+                <div class="col-md-12">
+                    <div class="apf-sing">
+                        <h6>Full Name *</h6>
+                        <input type="text" name="full_name" placeholder="Full Name" id="">
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="apf-sing">
+                        <h6>Passport Number *</h6>
+                        <input type="number" name="passport_number" placeholder="Passport Number" id="">
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="apf-sing">
+                        <h6>Email *</h6>
+                        <input type="email" name="email" placeholder="Email Address" id="">
+                    </div>
+                </div>
+
+
+                <div class="col-md-6">
+                    <div class="apf-sing">
+                        <h6>Select Job Category *</h6>
+                        <select name="job_category" class="job-category">
+                            <option data-display="Job Category" value="Construction Sector">Construction Sector</option>
+                            <option value="Manufacturing Sector">Manufacturing Sector</option>
+                            <option value="Hospitality Sector">Hospitality Sector </option>
+                            <option value="Administration Sector" >Administration Sector</option>
+                            <option value="Sales Sector">Sales Sector</option>
+                            <option value="Health Service Sector">Health Service Sector</option>
+                            <option value="Driving & Security Sector">Driving & Security Sector</option>
+                            <option value="Agriculture Sector">Agriculture Sector</option>
+                            <option value="Information Sector">Information Sector</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="apf-sing">
+                        <h6>Post *</h6>
+                        <input type="text" name="post" placeholder="Post" id="">
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="apf-sing">
+                        <h6>Contact Number *</h6>
+                        <input type="number" name="contact_number" placeholder="Contact Number" id="">
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="apf-sing">
+                        <h6>Address *</h6>
+                        <input type="text" name="address" placeholder="Address " id="">
+                    </div>
+                </div>
+
+              
+
+                <div class="col-md-6">
+                    <div class="apf-sing">
+                        <h6>Upload Passport *</h6>
+                        <input type="file" name="pp">
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="apf-sing">
+                        <h6>Upload CV *</h6>
+                        <input type="file" name="cv">
+                    </div>
+                </div>
+
+                <div class="col-md-12">
+                    <div class="apf-sing">
+                        <button type="submit" class="btn-form"> Apply Now</button>
+                    </div>
+                </div>
+                <% if (message.length > 0) { %> 
+                    <div id="flash-msg" class="alert alert-success">
+                        <%= message%>
+                    </div>
+                <% } %> 
+            </div>
+        </form>
+        </div>
+    </div>
+</section>
+<script>
+    setTimeout(function() {
+        $('#flash-msg').fadeOut('fast');
+    }, 5000); // <-- time in milliseconds
+
+</script>
+<%- include('footer'); -%>
