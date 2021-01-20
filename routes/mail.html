@@ -7,68 +7,20 @@
 </head>
 <body>
     
-    <style>
-        .mail-wrap {
-            background: #f7f7f7;
-            padding: 40px;
-            text-align: center;
-            width: 60%;
-            margin: auto;
-        }
 
-        .mail-wrap h3 {
-            font-size: 22px;
-            font-family: 'Montserrat', sans-serif;
-            text-transform: uppercase;
-            font-weight: 500;
-        }
-
-        .mail-wrap ul {
-            list-style: none;
-            width: 50%;
-            margin: auto;
-            text-align: left;
-            padding-left: 0;
-        }
-
-        .mail-wrap ul li {
-            padding: 5px 0;
-            font-family: 'Montserrat', sans-serif;
-        }
-
-        .mail-wrap ul li  span {
-            text-transform: uppercase;
-            margin-right: 10px;
-            font-weight: 500;
-            width: 180px;
-            display: inline-block;
-        }
-
-
-        @media screen and (max-width: 800px) {
-            .mail-wrap { 
-                width: 90%;
-            }
-            
-            .mail-wrap ul {
-                width: 100%;
-            }
-        }
-
-    </style>
 
     <div class="mail-wrap">
 
     
-        <h3 >You have a new applicant.</h3>
-        <ul>
-            <li><span> Full Name:</span> ${full_name}</li>
-            <li><span>Passport number:</span> ${passport_number}</li>
-            <li><span>Email:</span> ${email}</li>
-            <li><span>Job Category:</span> ${job_category}</li>
-            <li><span>Post:</span> ${post}</li>
-            <li><span>Contact number:</span> ${contact_number}</li>
-            <li><span>Address:</span> ${address}</li>
+        <h3 style="font-size: 22px;text-transform: uppercase;font-weight: 500;" >You have a new applicant.</h3>
+        <ul style="list-style: none;margin: auto;text-align: left;padding-left: 0; font-family: 'Montserrat', sans-serif;">
+            <li style="padding: 5px 0;" ><span style="  text-transform: uppercase; margin-right: 10px; font-weight: 500; width: 180px; display: inline-block;" > Full Name:</span> ${full_name}</li>
+            <li style="padding: 5px 0;" ><span style="  text-transform: uppercase; margin-right: 10px; font-weight: 500; width: 180px; display: inline-block;" >Passport number:</span> ${passport_number}</li>
+            <li style="padding: 5px 0;" ><span style="  text-transform: uppercase; margin-right: 10px; font-weight: 500; width: 180px; display: inline-block;" >Email:</span> ${email}</li>
+            <li style="padding: 5px 0;" ><span style="  text-transform: uppercase; margin-right: 10px; font-weight: 500; width: 180px; display: inline-block;" >Job Category:</span> ${job_category}</li>
+            <li style="padding: 5px 0;" ><span style="  text-transform: uppercase; margin-right: 10px; font-weight: 500; width: 180px; display: inline-block;" >Post:</span> ${post}</li>
+            <li style="padding: 5px 0;" ><span style="  text-transform: uppercase; margin-right: 10px; font-weight: 500; width: 180px; display: inline-block;" >Contact number:</span> ${contact_number}</li>
+            <li style="padding: 5px 0;" ><span style="  text-transform: uppercase; margin-right: 10px; font-weight: 500; width: 180px; display: inline-block;" >Address:</span> ${address}</li>
         </ul>
     </div>
 
