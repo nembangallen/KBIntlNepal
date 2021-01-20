@@ -3,27 +3,27 @@ require('dotenv').config()
 const expressLayouts = require('express-ejs-layouts');
 const path = require('path');
 const bodyParser = require('body-parser');
-const mysql = require('mysql');
+// const mysql = require('mysql');
 const routes = require('./routes/defaultRoutes');
 const adminRoutes = require('./routes/adminRoutes');
 
 const session = require('express-session');
 const flash = require('connect-flash')
 
-const db = mysql.createConnection({
-    host: process.env.HOST,
-    user     : process.env.USER,
-    password : process.env.PASSWORD,
-    database : process.env.DATABASE
-});
+// const db = mysql.createConnection({
+//     host: process.env.HOST,
+//     user     : process.env.USER,
+//     password : process.env.PASSWORD,
+//     database : process.env.DATABASE
+// });
 
 // Connect
-db.connect((err)=> {
-    if(err){
-        throw err;
-    }
-    console.log('Mysql connected...');
-});
+// db.connect((err)=> {
+//     if(err){
+//         throw err;
+//     }
+//     console.log('Mysql connected...');
+// });
 
 // Init app 
 const app = express();

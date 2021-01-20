@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <style>
+        .mail-wrap {
+            background: #f7f7f7;
+            padding: 40px;
+            text-align: center;
+            width: 60%;
+            margin: auto;
+        }
+
+        .mail-wrap h3 {
+            font-size: 22px;
+            font-family: 'Montserrat', sans-serif;
+            text-transform: uppercase;
+            font-weight: 500;
+        }
+
+        .mail-wrap ul {
+            list-style: none;
+            width: 50%;
+            margin: auto;
+            text-align: left;
+            padding-left: 0;
+        }
+
+        .mail-wrap ul li {
+            padding: 5px 0;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .mail-wrap ul li  span {
+            text-transform: uppercase;
+            margin-right: 10px;
+            font-weight: 500;
+            width: 180px;
+            display: inline-block;
+        }
+
+
+        @media screen and (max-width: 800px) {
+            .mail-wrap { 
+                width: 90%;
+            }
+            
+            .mail-wrap ul {
+                width: 100%;
+            }
+        }
+
+    </style>
+
+    <div class="mail-wrap">
+
+    
+        <h3 >You have a new applicant.</h3>
+        <ul>
+            <li><span> Full Name:</span> ${full_name}</li>
+            <li><span>Passport number:</span> ${passport_number}</li>
+            <li><span>Email:</span> ${email}</li>
+            <li><span>Job Category:</span> ${job_category}</li>
+            <li><span>Post:</span> ${post}</li>
+            <li><span>Contact number:</span> ${contact_number}</li>
+            <li><span>Address:</span> ${address}</li>
+        </ul>
+    </div>
+
+</body>
+</html>
