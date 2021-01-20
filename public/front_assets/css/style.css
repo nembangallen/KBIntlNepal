@@ -903,6 +903,14 @@ section.apply-post .job-listings ul li:hover {
   font-size: 14px;
 }
 
+.app-form .apf-sing h6 span {
+  font-size: 12px;
+  margin-left: 8px;
+  color: #767676;
+  font-weight: 400;
+  text-transform: initial;
+}
+
 .app-form .apf-sing input, .app-form .apf-sing select {
   width: 100%;
   padding: 10px;

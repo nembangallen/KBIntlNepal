@@ -965,6 +965,16 @@ section.apply-post {
             font-weight: 300;
             margin-bottom: 5px;
             font-size: 14px;
+
+            span {
+                font-size: 12px;
+                margin-left: 8px;
+                color: #767676;
+                font-weight: 400;
+                text-transform: initial;
+
+            }
+
         }
         
         input , select {
